@@ -55,7 +55,7 @@ except URLError as e:
       
 streamlit.write('The user entered ', fruit_choice)
 
-streamlit.header("The fruit load list contains:")
+streamlit.header("View Our Fruit List - Add Your Favorutes!")
 if streamlit.button('Get Fruit Load List'):
    my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
    my_cnx.close()
